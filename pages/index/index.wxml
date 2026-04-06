@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="header">
+    <text class="title">截图提交</text>
+    <text class="subtitle">快速上传截图，方便工作汇报</text>
+  </view>
+  
+  <view class="button-group">
+    <view class="btn btn-primary" bindtap="navigateToUpload">
+      <text>上传截图</text>
+    </view>
+    
+    <view class="btn btn-secondary" bindtap="navigateToHistory">
+      <text>历史记录</text>
+    </view>
+    
+    <view class="btn btn-secondary" bindtap="navigateToCategory">
+      <text>分类管理</text>
+    </view>
+  </view>
+  
+  <view class="tips">
+    <text class="tips-title">使用说明：</text>
+    <text class="tips-content">1. 点击"上传截图"按钮选择图片</text>
+    <text class="tips-content">2. 添加文字描述和选择分类</text>
+    <text class="tips-content">3. 点击提交完成上传</text>
+  </view>
+</view>

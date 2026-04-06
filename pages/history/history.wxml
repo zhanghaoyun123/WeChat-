@@ -1,0 +1,27 @@
+<view class="container">
+  <view class="section">
+    <text class="section-title">历史记录</text>
+    <view class="filter-bar">
+      <picker bindchange="bindCategoryChange" range="{{categories}}" range-key="name" value="{{categoryIndex}}">
+        <view class="filter-button">
+          <text>{{selectedCategory ? selectedCategory.name : '全部分类'}}</text>
+          <text class="arrow">▼</text>
+        </view>
+      </picker>
+    </view>
+  </view>
+  
+  <view class="screenshot-list">
+    <view wx:for="{{screenshots}}" wx:key="_id" class="list-item">
+      <image class="screenshot-image" src="{{item.imageUrl}}" mode="aspectFill"></image>
+      <view class="screenshot-info">
+        <view class="category-tag" style="background-color: {{getCategoryColor(item.categoryId)}}">{{item.categoryName}}</view>
+        <text class="screenshot-description">{{item.description || '无描述'}}</text>
+        <text class="screenshot-time">{{formatTime(item.createTime)}}</text>
+      </view>
+    </view>
+    <view wx:if="{{screenshots.length === 0}}" class="empty">
+      <text>暂无记录</text>
+    </view>
+  </view>
+</view>

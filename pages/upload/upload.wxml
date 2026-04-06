@@ -1,0 +1,35 @@
+<view class="container">
+  <view class="section">
+    <text class="section-title">选择截图</text>
+    <view class="image-preview" bindtap="chooseImage">
+      <image wx:if="{{imagePath}}" src="{{imagePath}}" mode="aspectFill"></image>
+      <text wx:else>点击选择图片</text>
+    </view>
+    <text class="section-hint">支持从相册选择或拍照</text>
+  </view>
+  
+  <view class="section">
+    <text class="section-title">文字描述</text>
+    <textarea class="textarea" placeholder="请输入截图描述" bindinput="bindDescriptionInput" value="{{description}}"></textarea>
+  </view>
+  
+  <view class="section">
+    <text class="section-title">选择分类</text>
+    <view class="category-selector">
+      <view wx:for="{{categories}}" wx:key="_id" class="category-item" bindtap="selectCategory" data-category="{{item}}">
+        <view class="category-tag" style="background-color: {{item.color}}">{{item.name}}</view>
+      </view>
+      <view class="category-item" bindtap="navigateToCategory">
+        <view class="category-tag add-category">+ 添加分类</view>
+      </view>
+    </view>
+    <view wx:if="{{selectedCategory}}" class="selected-category">
+      <text>已选择：</text>
+      <view class="category-tag" style="background-color: {{selectedCategory.color}}">{{selectedCategory.name}}</view>
+    </view>
+  </view>
+  
+  <view class="btn btn-primary" bindtap="submit" disabled="{{!imagePath || !selectedCategory}}">
+    <text>提交</text>
+  </view>
+</view>

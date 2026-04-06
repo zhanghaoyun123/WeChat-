@@ -1,0 +1,110 @@
+/* 全局样式 */
+page {
+  background-color: #f5f5f5;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+.container {
+  padding: 20rpx;
+}
+
+.btn {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  border-radius: 40rpx;
+  font-size: 32rpx;
+  margin-top: 40rpx;
+}
+
+.btn-primary {
+  background-color: #07c160;
+  color: white;
+}
+
+.btn-secondary {
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.input {
+  width: 100%;
+  height: 80rpx;
+  border: 1rpx solid #e0e0e0;
+  border-radius: 10rpx;
+  padding: 0 20rpx;
+  margin-top: 20rpx;
+  font-size: 32rpx;
+}
+
+.textarea {
+  width: 100%;
+  height: 200rpx;
+  border: 1rpx solid #e0e0e0;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  margin-top: 20rpx;
+  font-size: 32rpx;
+  resize: none;
+}
+
+.image-preview {
+  width: 100%;
+  height: 400rpx;
+  margin-top: 20rpx;
+  border-radius: 10rpx;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.image-preview img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+}
+
+.list-item {
+  background-color: white;
+  padding: 20rpx;
+  margin-top: 10rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.05);
+}
+
+.list-item-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+
+.list-item-content {
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 10rpx;
+}
+
+.list-item-time {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.category-tag {
+  display: inline-block;
+  padding: 5rpx 15rpx;
+  border-radius: 20rpx;
+  font-size: 24rpx;
+  margin-right: 10rpx;
+  margin-bottom: 10rpx;
+}
+
+.empty {
+  text-align: center;
+  padding: 100rpx 0;
+  color: #999;
+  font-size: 28rpx;
+}

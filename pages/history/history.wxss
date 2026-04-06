@@ -1,0 +1,60 @@
+.section {
+  margin-top: 30rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15rpx;
+  display: block;
+}
+
+.filter-bar {
+  margin-bottom: 20rpx;
+}
+
+.filter-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  padding: 20rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0,0,0,0.05);
+}
+
+.arrow {
+  font-size: 20rpx;
+  color: #999;
+}
+
+.screenshot-list {
+  margin-top: 20rpx;
+}
+
+.screenshot-image {
+  width: 100%;
+  height: 300rpx;
+  border-radius: 10rpx;
+  margin-bottom: 15rpx;
+}
+
+.screenshot-info {
+  margin-top: 10rpx;
+}
+
+.screenshot-description {
+  font-size: 28rpx;
+  color: #666;
+  margin-top: 10rpx;
+  display: block;
+  line-height: 40rpx;
+}
+
+.screenshot-time {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 10rpx;
+  display: block;
+}

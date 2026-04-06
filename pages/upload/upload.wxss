@@ -1,0 +1,47 @@
+.section {
+  margin-top: 30rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 15rpx;
+  display: block;
+}
+
+.section-hint {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 10rpx;
+  display: block;
+}
+
+.category-selector {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10rpx;
+}
+
+.category-item {
+  margin-right: 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.add-category {
+  border: 1rpx dashed #999;
+  background-color: transparent;
+  color: #999;
+}
+
+.selected-category {
+  margin-top: 20rpx;
+  display: flex;
+  align-items: center;
+}
+
+.selected-category text {
+  font-size: 28rpx;
+  color: #666;
+  margin-right: 10rpx;
+}

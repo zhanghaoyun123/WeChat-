@@ -1,0 +1,33 @@
+<view class="container">
+  <view class="section">
+    <text class="section-title">分类管理</text>
+    <view class="add-category">
+      <input class="input" placeholder="分类名称" bindinput="bindCategoryNameInput" value="{{categoryName}}"></input>
+      <picker bindchange="bindColorChange" range="{{colors}}" value="{{colorIndex}}">
+        <view class="color-picker">
+          <view class="color-preview" style="background-color: {{colors[colorIndex]}}"></view>
+          <text class="color-text">{{colors[colorIndex]}}</text>
+        </view>
+      </picker>
+      <view class="btn btn-primary" bindtap="addCategory">
+        <text>添加分类</text>
+      </view>
+    </view>
+  </view>
+  
+  <view class="category-list">
+    <view wx:for="{{categories}}" wx:key="_id" class="category-item">
+      <view class="category-info">
+        <view class="category-tag" style="background-color: {{item.color}}">{{item.name}}</view>
+        <text class="category-time">{{formatTime(item.createTime)}}</text>
+      </view>
+      <view class="category-actions">
+        <button class="action-button edit" bindtap="editCategory" data-category="{{item}}">编辑</button>
+        <button class="action-button delete" bindtap="deleteCategory" data-id="{{item._id}}">删除</button>
+      </view>
+    </view>
+    <view wx:if="{{categories.length === 0}}" class="empty">
+      <text>暂无分类</text>
+    </view>
+  </view>
+</view>
